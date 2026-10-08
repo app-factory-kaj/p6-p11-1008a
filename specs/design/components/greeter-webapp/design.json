@@ -1,0 +1,16 @@
+{
+  "name": "greeter-webapp",
+  "type": "web-application",
+  "version": "0.1.0",
+  "language": "TypeScript",
+  "buildpack": "docker",
+  "appPath": "greeter-webapp",
+  "entrypoint": "deployment/web-application",
+  "exposure": "internet",
+  "dependencies": [
+    { "kind": "platform-resource", "name": "thunder-auth", "resourceType": "thunder-app" }
+  ],
+  "description": "The whole product: a single-page React app that gates access behind Thunder sign-in, then offers a form with a name field and a Greet button that renders a greeting for the typed name directly in the browser. It calls no backend API and persists nothing — the greeting is computed locally and lost on refresh.",
+  "stories": ["F1.1", "F1.2", "F1.3", "F1.4"],
+  "skillsPinned": ["wireframes", "react-webapp", "oxygen-ui-design-system", "thunder-authentication"]
+}

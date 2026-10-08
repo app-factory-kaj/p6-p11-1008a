@@ -1,0 +1,9 @@
+title Greeter
+
+component greeter-webapp as "Greeter" web-application
+
+east thunder-auth as "Thunder Auth" identity-server
+
+north -> greeter-webapp
+
+greeter-webapp -> thunder-auth
