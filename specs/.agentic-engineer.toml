@@ -1,0 +1,4 @@
+apiVersion = "agentic-engineer/v1"
+name = "p6-p11-1008a"
+createdAt = "2026-10-08T06:32:33Z"
+idea = "A small React web app for greeting people: a form with a name field, a Greet button, and a greeting shown below. Follow the conventions in app-factory-kaj/e2e-reference."
