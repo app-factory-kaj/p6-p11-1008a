@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 3,
+  "name": "Greeter",
+  "entryScreen": "screen.greet",
+  "roles": [{ "id": "user", "name": "User" }],
+  "states": [
+    { "id": "state.default", "name": "Default" },
+    { "id": "state.validation-error", "name": "Empty name" }
+  ],
+  "screens": [
+    { "id": "screen.greet", "name": "Greet", "roleIds": ["user"] },
+    { "id": "screen.account", "name": "Account", "roleIds": ["user"] },
+    { "id": "screen.settings", "name": "Settings", "roleIds": ["user"] },
+    { "id": "screen.signed-out", "name": "Signed out", "roleIds": ["user"] }
+  ],
+  "flows": [
+    { "id": "flow.greet", "name": "Greet a person", "roleId": "user", "screenIds": ["screen.greet"] }
+  ]
+}
